@@ -7,10 +7,23 @@ body {
     color: #FD6E0A;
 }
 
+.btn-primary{
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    font-size: 20px;
+    font-weight: 700px;
+    color: white;
+    padding: 16px 32px;
+}
+
 
 /*nav related styles*/
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
 }
 
 .nav-title{
@@ -24,16 +37,32 @@ color: #181818;
 
 nav > ul{
     display: flex;
+    align-items: center;
+    
 }
 
-nav > li {
+nav li {
     
     list-style: none;
     margin-right: 50px;
     color: #474747;
 }
 
-nav > a{
+nav a{
     text-decoration: none;
     color: #181818 ;
+}
+
+/*header related styles*/
+.header{
+    background-color: #FFF8F3;
+}
+.banner{
+    padding: 30px 30px 30px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.banner .profile-pic{
+    width: 500px;
 }

@@ -180,3 +180,22 @@ main section {
     font-size: 30px;
     color: #474747;
 }
+
+.resume-container {
+    display: flex;
+    gap: 60px;
+}
+
+.resume-item-institute,
+.resume-item-description {
+    color: #757575;
+}
+
+.resume-container hr {
+    margin: 30px 0px;
+}
+
+.download-cv{
+    text-align: center;
+    margin:50px;
+}

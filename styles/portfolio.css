@@ -1,6 +1,6 @@
 /*common shared styles*/
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans";
     margin: 0px;
 }
 
@@ -195,16 +195,45 @@ main section {
     margin: 30px 0px;
 }
 
-.download-cv{
+.download-cv {
     text-align: center;
-    margin:50px;
+    margin: 50px;
 }
 
 /* footer styles */
 
-footer{
+footer {
     display: flex;
+    gap: 100px;
     background: #FFF8F3;
-    padding: 130px 230px;
+    padding: 100px 180px;
     margin-top: 100px;
+}
+
+.social-links a{
+    margin-left: 24px;
+}
+
+.footer-column {
+  width: 50%;
+}
+
+.contact input[type="text"], .contact input[type = "email"],
+textarea {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+
+
+    display: block;
+    margin-bottom: 24px;
+    padding: 16px 30px;
+
+    border: 0;
+    border-radius: 5px;
+    background: #FFFFFF;
+    width: 100%;
+
 }

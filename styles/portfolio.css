@@ -252,6 +252,7 @@ textarea {
 
 @media screen  and (max-width: 576px) {
 
+    /* What I do seciton responsive styles */
     .skills-container{
         flex-direction: column;
         padding: 8px 16px;
@@ -259,4 +260,43 @@ textarea {
     #what-i-do-description {
         padding: 0 20px 20px 20px;
     }
+
+    /* Resume section responsive design */
+    .resume-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #resume .section-title{
+        font-size: 40px;
+        padding: 10px 16px;
+        margin-top: 0px;
+        background: #f5decd;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1150px)  {
+    
+    /* What I do seciton responsive styles */
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 80px;
+        gap: 30px;
+    }
+    #what-i-do-description {
+        padding: 0 80px;
+    }
+
+    /* Resume section responsive design */
+    .resume-container {
+        padding: 100px;
+    }
+
+    #resume .section-title{
+        padding: 10px 50px;
+        margin: 0 auto;
+       
+    }
+
 }

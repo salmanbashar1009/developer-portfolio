@@ -156,6 +156,8 @@ main section {
     margin-top: 0px;
 }
 
+/* What I do section styles */
+
 #what-i-do-description {
     padding: 16px 150px;
 }
@@ -242,4 +244,19 @@ textarea {
     background: #FFFFFF;
     width: 100%;
 
+}
+
+.hide{
+    display: none;
+}
+
+@media screen  and (max-width: 576px) {
+
+    .skills-container{
+        flex-direction: column;
+        padding: 8px 16px;
+    }
+    #what-i-do-description {
+        padding: 0 20px 20px 20px;
+    }
 }

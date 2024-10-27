@@ -219,11 +219,21 @@ footer {
 }
 
 .social-links a{
-    margin-left: 24px;
+    margin-right: 24px;
+    margin-left: -10px;
+    
 }
 
 .footer-column {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.footer-column p{
+    text-align: left;
 }
 
 .contact input[type="text"], .contact input[type = "email"],
@@ -252,6 +262,16 @@ textarea {
 
 @media screen  and (max-width: 576px) {
 
+    /* About section responsive  styles */
+
+    .about-info-container{
+        flex-direction: column;
+    }
+
+    .about{
+        padding: 30px;
+    }
+
     /* What I do seciton responsive styles */
     .skills-container{
         flex-direction: column;
@@ -273,6 +293,60 @@ textarea {
         margin-top: 0px;
         background: #f5decd;
     }
+
+    /* Footer section responsive styles */
+    footer {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .footer-column{
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column h3{
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+        font-size: 24px;
+        
+    }
+
+    .footer-column p{
+        width: 380px;
+    }
+
+   .contact{
+        margin-top: 20px;
+        width: 100%;
+        
+    }
+
+    .contact input[type="text"], .contact input[type = "email"],
+textarea  {
+    display: block;
+    margin-bottom: 24px;
+    padding: 16px ;
+
+    border: 0;
+    border-radius: 5px;
+    background: #FFFFFF;
+    width: 93%;
+
+}
+
+.contact input[type = "submit"]{
+    width: 100%;
+}
 }
 
 @media screen and (min-width: 577px) and (max-width: 1150px)  {
@@ -299,4 +373,57 @@ textarea {
        
     }
 
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 850px) {
+
+     /* About section  styles */
+
+     .about-info-container{
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);
+
+    }
+
+    .about{
+        padding: 60px;
+    }
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 1070px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+    }
+
+    .footer-column{
+        width:100%;
+        justify-content: center;
+        align-items: center; 
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .footer-column p{
+        text-align: center;
+        margin-top: 0;
+        width: 550px;
+    }
+    .footer-column h3{
+        text-align: center;
+        margin: 25px;
+    }
+
+    .social-links{
+        margin-left: 5px;
+    }
+    
 }
